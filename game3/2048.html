@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game "2048"</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="../text-3d.css">
+	<link rel="stylesheet" href="../style.css">
+	<script type="text/javascript" src="app.js"></script>
+	
+</head>
+<body>
+	<font face="Arial">
+		<table align="center" cellpadding="6" width = 75% bgcolor="white" style="opacity:0.85; margin-top:75px;">
+		<tr><td align="left" width=20%>
+			<div class="text3d-wrap-1">
+				<span class="text3d-1"><a style ="text-decoration:none; color: black;" href = "../index.html">Videogames</a></span>
+			</div>
+		</td>
+		<td ><p align="center" class="gradient-text"><b>2048</b></p></td>
+		<td align="right" width=35%><a href="../index.html" class="floating-button">Back to game selection</a>
+		</td>
+		</tr>
+		</table>
+	<div class="container">
+    <div class="heading">
+        <h1 class="title">2048</h1>
+        <div class="scores-container">
+            <div class="score-container">104<div class="score-addition">+24</div></div>
+            <div class="best-container">1420</div>
+        </div>
+    </div>
+    <div class="above-game">
+        <a class="restart-button">New Game</a>
+    </div>
+    <div class="game-container">
+        <div class="game-message">
+            <p>
+            </p>
+            <div class="lower">
+                <a class="keep-playing-button">Keep Going</a>
+                <a class="retry-button">Try Again?</a>
+                <div class="score-sharing"></div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-row">
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+                <div class="grid-cell">
+                </div>
+            </div>
+        </div>
+        <div class="tile-container"><div class="tile tile-2 tile-position-1-1"><div class="tile-inner">2</div></div><div class="tile tile-8 tile-position-1-2"><div class="tile-inner">6</div></div><div class="tile tile-8 tile-position-1-2"><div class="tile-inner">6</div></div><div class="tile tile-16 tile-position-1-2 tile-merged"><div class="tile-inner">8</div></div><div class="tile tile-16 tile-position-1-3"><div class="tile-inner">8</div></div><div class="tile tile-2 tile-position-1-4"><div class="tile-inner">2</div></div><div class="tile tile-4 tile-position-2-1"><div class="tile-inner">4</div></div><div class="tile tile-4 tile-position-2-1"><div class="tile-inner">4</div></div><div class="tile tile-8 tile-position-2-1 tile-merged"><div class="tile-inner">6</div></div><div class="tile tile-2 tile-position-3-1"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-3-3 tile-new"><div class="tile-inner">2</div></div></div>
+    </div>
+</div>
+	<audio autoplay="" muted=""> 
+		<source src="silence.mp3"  type="audio/mp3">
+	</audio>
+	<audio id="audioID" loop autoplay=""> 
+		<source src="../audio/Kayou.-Again (Your Lie in April).mp3"  type="audio/mp3">
+	</audio>
+    <script>
+          var audio = document.getElementById("audioID");
+          audio.volume = 0.25;
+    </script>
+</body>
+</html>

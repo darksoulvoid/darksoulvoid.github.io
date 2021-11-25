@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Game "Maze"</title>
+<meta charset="utf-8">
+    
+<link rel="stylesheet" href="../text-3d.css">
+
+</head>
+<style>
+	body {
+	  padding:0;
+	  margin:0;
+	  }
+
+	a{
+		color: #0055aa; 
+		text-decoration: none; 
+	} 
+	a:hover {
+		color: #0017d8;   
+		text-decoration: underline; 
+	   }
+	#intro{
+		position:fixed;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		z-index:1;
+		}
+	
+	#page-wrapper{
+		position:relative;
+		z-index:2;
+	}
+	.floating-button {
+	  text-decoration: none;
+	  display: inline-block;
+	  width: 280px;
+	  height: 60px;
+	  line-height: 45px;
+	  border-radius: 45px;
+	  margin: 10px 20px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 14px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  text-center: yes;
+	  letter-spacing: 2px;
+	  font-weight: 600;
+	  color: #524f4e;
+	  background: #76ACFF;
+	  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	  transition: .3s;
+	}
+	.floating-button:hover {
+	  background: #1818CF;
+	  box-shadow: 0 15px 20px rgba(94, 127, 228, .4);
+	  color: white;
+	  transform: translateY(-7px);
+	}
+	@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+	.gradient-text {
+	  font-family: 'Rubik One', sans-serif;
+	  font-size: 35px;
+	  text-transform: uppercase;
+	  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  color: #0B2349;
+	  display: table;
+	  margin: 20px auto;
+	}
+	.canvas_style {
+    border: 6px double black;
+    background: white;
+  }
+
+  img {
+    display: none;
+  }
+
+  button {
+    padding: 8px;
+  }
+  body {
+    background-image: url(https://phandroid.s3.amazonaws.com/wp-content/uploads/2015/02/galaxy-wallpaper-1.jpg);
+}
+
+canvas {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+}
+</style>
+<body text="black" scroll="yes">
+	<audio autoplay="" muted=""> 
+							<source src="../silence.mp3"  type="audio/mp3">
+						</audio>
+						<audio id="audioID" loop autoplay=""> 
+							<source src="../audio/The Kid LAROI - Without you (minus).mp3"  type="audio/mp3">
+						</audio>
+<div id="intro"></div>
+	<div id="page-wrapper">
+	<font face="Arial">
+	<table align="center" cellpadding="6" width = 75% bgcolor="white" style="opacity:0.85;">
+		<tr><td align="left" width=20%>
+			<div class="text3d-wrap-1">
+				<span class="text3d-1"><a style ="text-decoration:none; color: black;" href = "../index.html">Videogames</a></span>
+			</div>
+		</td>
+		<td><p class="gradient-text"><b>Game "Maze"</b></p></td>
+		<td align="right" width=30%><a href="../index.html" class="floating-button">Back to game selection</a>
+		</td>
+		</tr>
+		</table>
+	</font>
+	</div>
+	<script type="text/javascript" src="maze.js"></script>
+	<script>
+		  var audio = document.getElementById("audioID");
+		  audio.volume = 0.25;
+	</script>
+</body>
+</html>

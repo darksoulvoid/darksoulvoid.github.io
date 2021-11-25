@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game "Don't be caught"</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../text-3d.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<audio autoplay="" muted=""> 
+		<source src="silence.mp3"  type="audio/mp3">
+	</audio>
+	<audio id="audioID" loop autoplay=""> 
+		<source src="eternal_-_youth-rube.mp3" type="audio/mp3">
+	</audio>
+	<p class="gradient-text"><b>Game "Don't be caught"</b></p>
+	<div class="wrapper">
+		<div class="game">
+			<div class="game__body">
+				<div class="game__items">
+					<div class="game__text">
+						The result: <span></span><br>
+						<a href="../index.html" class="floating-button" style="width: 280px; height: 60px; text-align: middle;">Back to game selection</a>
+					</div>
+				</div>				
+				<div class="game__counter"></div>
+			</div>
+			<div class="game__win">You Won!
+			<a href="../index.html" class="floating-button">Back to game selection</a></div>
+
+		</div>
+		<div class="info">
+			<a href="#info" title="Game's rules" class="info__icon">i</a>
+			<div id="info" class="info__body">
+				<a href="#" class="info__close">X</a>
+				<div class="info__text">
+					<p>Hold on for a minute, running the mouse away from the squares</p>
+					<p>The game will start when you hover over the gray field</p>
+					<p>If you go out of bounds, the game will start over</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		  var audio = document.getElementById("audioID");
+		  audio.volume = 0.10;
+	</script>
+</body>
+</html>

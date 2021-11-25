@@ -1,0 +1,52 @@
+.floating-button {
+	  text-decoration: none;
+	  display: inline-block;
+	  width: 280px;
+	  height: 45px;
+	  line-height: 45px;
+	  border-radius: 45px;
+	  margin: 10px 20px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 14px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  vertical-align: middle; 
+	  letter-spacing: 2px;
+	  font-weight: 600;
+	  color: #524f4e;
+	  background: #76ACFF;
+	  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	  transition: .3s;
+	}
+	.floating-button:hover {
+	  background: #1818CF;
+	  box-shadow: 0 15px 20px rgba(94, 127, 228, .4);
+	  color: white;
+	  transform: translateY(-7px);
+	}
+	.floating-block{
+		font-family: 'Bebas Neue', cursive;
+		font-size: 24px;
+		text-decoration: none;
+		color: black;
+	  display: inline-block;
+	  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	  transition: .3s;
+	}
+	.floating-block:hover{
+	  box-shadow: 0 15px 20px rgba(94, 127, 228, .4);
+	  color: blue;
+	  transform: translateY(-7px);
+	}
+	@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+	.gradient-text {
+	  font-family: 'Rubik One', sans-serif;
+	  font-size: 35px;
+	  text-transform: uppercase;
+	  background: linear-gradient(45deg, #AFECFF 33%, #367BFC 66%, #1432B8);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  color: #AFECFF;
+	  display: table;
+	  margin: 20px auto;
+	}

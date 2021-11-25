@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Game "PacMan"</title>
+    
+    <link rel="stylesheet" href="text-3d.css">
+    <link rel="stylesheet" href="../style.css">
+    <style type="text/css">
+
+      @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+      @font-face {
+        font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+	    
+       .font{
+      font-family: 'VT323';
+      font-weight: normal;
+      font-style: normal;
+      }
+      #pacman {
+        height:450px;
+        width:342px;
+        margin:20px auto;
+      }
+      #shim { 
+        font-family: 'VT323'; 
+        position:absolute;
+        visibility:hidden
+      }
+      h1 { font-family: 'VT323'; color: #fff52c; font-size: 72px;}
+      body { margin:0px auto; font-family:sans-serif; 
+        background: url('background.gif');
+        background-repeat: no-repeat;
+        background-size: 1920px, 1080px;}
+      .a { text-decoration:none;
+        color: #1a1a1a;
+        font-family: 'VT323', monospace;
+        font-size: 32px;
+      }
+      .background{
+        opacity: 0.5;
+      }
+      text {
+        opacity: 1;
+      }
+    </style>
+
+
+</head>
+
+<body>
+  
+  <audio id="audioID" loop autoplay=""> 
+              <source src="../audio/Eurobeat Brony - Discord (minus).mp3"  type="audio/mp3">
+            </audio>
+  <div id="shim">shim for font face</div>
+
+
+<font face="Arial">
+    <table align="center" cellpadding="6" width = 75% style="margin-top:50px;">
+    <tr><td align="left" width=20%>
+      <div class="text3d-wrap-1">
+        <span class="text3d-1"><a class="font" style ="text-decoration:none; color:#006ea5;" href = "../index.html">Videogames</a></span>
+      </div>
+    </td>
+    <td align="center"><h1 class="font">Pacman</h1></td>
+   <td align="right" width=35%><a href="../index.html" class="floating-button">Back to game selection</a>
+    </td>
+    </tr>
+    </table>
+  <div id="intro"></div>
+  <div id="page-wrapper">
+  
+
+  <div id="pacman"></div>
+
+  <div align="right" style="position: bottom"><a href="https://github.com/daleharvey/pacman" class="a">Dale Harvey</a></div>
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+
+    var audio = document.getElementById("audioID");
+      audio.volume = 0.10;
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.text3d-wrap-1 {    
+    margin: 15px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    perspective: 1500px;    
+}    
+.text3d-1 {
+    align-self: top;
+    margin-top: -18px;
+    transition: all 0.3s ease;
+	font-family: 'VT323', monospace;
+    font-size: 96px;
+    letter-spacing: 3px;
+    color: black;
+    text-shadow: white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px, #9c9c9c 1px 3px 1px, #9c9c9c 1px 4px 1px, #9c9c9c 1px 5px 1px, #9c9c9c 1px 6px 1px, #9c9c9c 1px 7px 1px, #9c9c9c 1px 8px 1px, #9c9c9c 1px 9px 1px, #9c9c9c 1px 10px 1px, #9c9c9c 1px 11px 1px, #9c9c9c 1px 12px 1px, rgba(25, 153, 180, 0.4) 1px 18px 6px, rgba(25, 153, 180, 0.2) 1px 22px 10px, rgba(25, 153, 180, 0.2) 1px 26px 35px, rgba(25, 153, 180, 0.4) 1px 30px 65px;
+}
+.text3d-wrap-1:hover .text3d-1{
+    margin-top: -26px;
+    text-shadow: white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px, #9c9c9c 1px 3px 1px, #9c9c9c 1px 4px 1px, #9c9c9c 1px 5px 1px, #9c9c9c 1px 6px 1px, #9c9c9c 1px 7px 1px, #9c9c9c 1px 8px 1px, #9c9c9c 1px 9px 1px, #9c9c9c 1px 10px 1px, #9c9c9c 1px 11px 1px, #9c9c9c 1px 12px 1px, rgba(25, 153, 180, 0.4) 1px 38px 26px, rgba(25, 153, 180, 0.2) 1px 42px 30px, rgba(25, 153, 180, 0.2) 1px 46px 65px, rgba(25, 153, 180, 0.4) 1px 50px 95px;
+}
+@media (max-width:767px) {
+    .text3d-1 {
+        font-size: 60px;
+    }
+}
