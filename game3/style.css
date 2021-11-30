@@ -1,3 +1,8 @@
+@media (max-width: 1280px){
+        html {
+          zoom:60%;
+        }
+      }
 html, body {
     color: #80d1ff;
     font-family: "Microsoft YaHei", sans-serif, 'Microsoft Sans Serif','Microsoft JhengHei UI';
